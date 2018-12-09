@@ -25,6 +25,7 @@
     "lint": "tslint --project .",
     "compile": "tsc",
     "test": "jest",
-    "clean": "rimraf dist"
+    "clean": "rimraf dist",
+    "build": "npm-run-all lint compile test"
   }
 }
