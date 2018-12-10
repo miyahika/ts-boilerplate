@@ -38,6 +38,7 @@
       "member-variable-declaration"
     ],
     "newline-before-return": false,
-    "no-implicit-dependencies": false
+    "no-implicit-dependencies": false,
+    "no-default-export": false
   }
 }
