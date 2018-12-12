@@ -23,13 +23,6 @@
     "export-name": false,
     "promise-function-async": false,
     "no-void-expression": false,
-    "trailing-comma": [
-      true,
-      {
-        "multiline": "always",
-        "singleline": "never"
-      }
-    ],
     "typedef": [
       true,
       "parameter",
@@ -39,6 +32,9 @@
     ],
     "newline-before-return": false,
     "no-implicit-dependencies": false,
-    "no-default-export": false
+    "no-default-export": false,
+    "function-name": false,
+    "import-name": false,
+    "react-a11y-input-elements": false
   }
 }
