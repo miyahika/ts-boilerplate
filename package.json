@@ -11,6 +11,7 @@
     "compile": "tsc",
     "lint": "tslint --project .",
     "test": "jest",
+    "test:mutation": "stryker run",
     "start": "next"
   },
   "babel": {
