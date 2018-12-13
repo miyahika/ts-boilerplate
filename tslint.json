@@ -32,9 +32,6 @@
     ],
     "newline-before-return": false,
     "no-implicit-dependencies": false,
-    "no-default-export": false,
-    "function-name": false,
-    "import-name": false,
-    "react-a11y-input-elements": false
+    "no-default-export": false
   }
 }
