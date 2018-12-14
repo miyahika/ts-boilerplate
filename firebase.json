@@ -2,10 +2,7 @@
   "functions": {
     "source": "dist/app",
     "predeploy": [
-      "npm run lint",
-      "npm run build",
-      "npm run copy",
-      "npm run install-deps"
+      "npm run build"
     ]
   },
   "hosting": {
