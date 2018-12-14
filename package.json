@@ -9,13 +9,13 @@
     "build": "run-p build:client build:server",
     "build:client": "next build client",
     "build:server": "tsc --project server",
-    "clean": "rimraf client/.next server/dist",
+    "clean": "rimraf client/.next server/dist server/reports",
     "lint": "run-p lint:client lint:server",
     "lint:client": "tslint --project client",
     "lint:server": "tslint --project server",
     "start": "next client",
     "test": "jest --projects client server",
-    "test:mutation": "stryker run"
+    "test:mutation": "cd server && stryker run"
   },
   "babel": {
     "presets": [

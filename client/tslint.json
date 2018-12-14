@@ -1,6 +1,6 @@
 {
   "extends": [
-    "../tslint.json"
+    "../tslint.base.json"
   ],
   "rules": {
     "function-name": false,
