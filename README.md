@@ -3,9 +3,9 @@
 # Quick Setup
 
 ```
-yarn install
-yarn build
-yarn start
+npm install -g firebase-tools
+npm install
+npm run build
 ```
 
 # Environment
@@ -19,7 +19,7 @@ yarn start
   * [gitignore](https://marketplace.visualstudio.com/items?itemName=michelemelluso.gitignore)
   * [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
   * [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
-* [Yarn](https://yarnpkg.com/)
+* NPM
   * [cross-env](https://github.com/kentcdodds/cross-env)
   * [npm-run-all](https://github.com/mysticatea/npm-run-all)
   * [rimraf](https://github.com/isaacs/rimraf)
