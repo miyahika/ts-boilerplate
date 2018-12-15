@@ -1,25 +1,20 @@
 import * as express from "express";
 import { https } from "firebase-functions";
 import * as next from "next";
+import api from "./api";
 
 const dev = process.env.NODE_ENV !== "production";
-const server = next({ dev, conf: { distDir: ".next" } });
-const handle = server.getRequestHandler();
+const renderer = next({ dev, conf: { distDir: ".next" } });
+const handle = renderer.getRequestHandler();
 
 const app = express();
 app.disable("x-powered-by");
-app.get("/users/:uid", async (req: express.Request, res: express.Response) => {
-  const uid = req.params.uid;
-  res.status(200).send(`You requested user with UID = ${uid}`);
-});
-app.get("*", (req: express.Request, res: express.Response) => {
+app.use("/api", api());
+app.get("*", async (req: express.Request, res: express.Response) => {
   return handle(req, res);
 });
 
-export const application = https.onRequest(
-  (req: express.Request, res: express.Response) => {
-    // tslint:disable-next-line:no-console
-    console.log(`File: ${req.originalUrl}`);
-    return server.prepare().then(() => app(req, res));
-  }
+// tslint:disable-next-line:typedef
+export const application = https.onRequest(async (req, res) =>
+  renderer.prepare().then(() => app(req, res))
 );
