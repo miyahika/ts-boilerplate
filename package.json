@@ -16,7 +16,6 @@
     "copy:defs": "cpx *{package.json,package-lock.json} dist/app -C",
     "copy:public": "cpx public/** dist/public",
     "copy:server": "cpx server/dist/src/** dist/app",
-    "predeploy": "run-s build",
     "deploy": "firebase deploy",
     "install-deps": "cd dist/app && npm install --production",
     "lint": "run-p lint:client lint:server",
