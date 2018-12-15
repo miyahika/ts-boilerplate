@@ -24,6 +24,8 @@
     "prestart": "npm-run-all clean --parallel compile --serial copy install-deps",
     "start": "cross-env NODE_ENV=production firebase serve",
     "test": "jest --projects client server",
+    "test:client": "jest --projects client",
+    "test:server": "jest --projects server",
     "test:mutation": "cd server && stryker run"
   },
   "babel": {
