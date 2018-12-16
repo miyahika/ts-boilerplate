@@ -4,6 +4,7 @@
   ],
   "rules": {
     "function-name": false,
-    "react-a11y-input-elements": false
+    "react-a11y-input-elements": false,
+    "react-a11y-anchors": false
   }
 }
