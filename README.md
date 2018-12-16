@@ -5,7 +5,21 @@
 ```
 npm install -g firebase-tools
 npm install
-npm run build
+```
+
+* Run DevServer for Development
+```
+npm start
+```
+
+* Run Emulation server
+```
+npm run serve
+```
+
+* Deploy
+```
+npm run deploy
 ```
 
 # Environment
