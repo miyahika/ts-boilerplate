@@ -4,7 +4,6 @@
   ],
   "rules": {
     "function-name": false,
-    "import-name": false,
     "react-a11y-input-elements": false
   }
 }
