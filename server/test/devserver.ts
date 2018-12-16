@@ -1,10 +1,11 @@
+import server from "@src/server";
 import * as next from "next";
 import * as path from "path";
-import server from "../src/server";
+
 const port = Number.parseInt(process.env.PORT || "3000", 10);
 const renderer = next({
   dev: true,
-  dir: path.resolve("../client")
+  dir: path.resolve("client")
 });
 const app = server(renderer);
 
