@@ -8,6 +8,7 @@ const renderer = next({
 });
 const app = server(renderer);
 
+// tslint:disable-next-line:no-floating-promises
 renderer.prepare().then(() => {
   app.listen(port, (err: Error) => {
     if (err) {
