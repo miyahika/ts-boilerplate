@@ -13,5 +13,15 @@
   "settings": {
     "editor.formatOnSave": true,
     "tslint.autoFixOnSave": true
+  },
+  "extensions": {
+    "recommendations": [
+      "EditorConfig.EditorConfig",
+      "eg2.tslint",
+      "michelemelluso.gitignore",
+      "eamodio.gitlens",
+      "blanu.vscode-styled-jsx",
+      "AndrewRazumovsky.vscode-styled-jsx-languageserver"
+    ]
   }
 }
