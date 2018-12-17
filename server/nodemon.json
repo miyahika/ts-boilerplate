@@ -1,0 +1,8 @@
+{
+  "watch": [
+    "server/src/**/*.ts"
+  ],
+  "ext": "ts",
+  "exec": "ts-node -r tsconfig-paths/register --project server/tsconfig.json server/test/devserver.ts",
+  "verbose": true
+}
