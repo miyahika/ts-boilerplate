@@ -7,12 +7,12 @@ export default function(renderer: next.Server): express.Express {
 
   const app = express();
   app.disable("x-powered-by");
-  app.get("/p/:id", (req: express.Request, res: express.Response) =>
+  app.get("/p/:id", async (req: express.Request, res: express.Response) =>
     renderer.render(req, res, "/post", { id: req.params.id })
   );
-  app.get("/b/:id", (req: express.Request, res: express.Response) => {
-    return renderer.render(req, res, "/blogpost", { title: req.params.id });
-  });
+  app.get("/b/:id", async (req: express.Request, res: express.Response) =>
+    renderer.render(req, res, "/blogpost", { title: req.params.id })
+  );
   app.use("/api", api());
   app.get("*", async (req: express.Request, res: express.Response) => {
     return handle(req, res);
