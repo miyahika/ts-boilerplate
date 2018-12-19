@@ -43,7 +43,8 @@
     "firebase-functions": "^2.1.0",
     "next": "canary",
     "react": "next",
-    "react-dom": "next"
+    "react-dom": "next",
+    "react-test-renderer": "next"
   },
   "devDependencies": {
     "@babel/core": "^7.2.0",
